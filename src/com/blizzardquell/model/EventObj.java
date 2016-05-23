@@ -37,5 +37,29 @@ public class EventObj {
 		this.name = name;
 	}
 	
+	public String getUrl() {
+		return url;
+	}
+
+	public String getDesc() {
+		return description;
+	}
+
+	public Date getStartTime() {
+		return startTime;
+	}
+
+	public Date setEndTime() {
+		return endTime;
+	}
+
+	public String setId() {
+		return id;
+	}
+
+	public String setName() {
+		return name;
+	}
+	
 	
 }

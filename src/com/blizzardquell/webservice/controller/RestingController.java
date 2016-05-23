@@ -14,10 +14,10 @@ import com.blizzardquell.model.EventObj;
 @RequestMapping("/service/events")
 public class RestingController {
 	@RequestMapping(value = "/{accessToken}", method = RequestMethod.GET)
-	public String getEvents(@PathVariable String accessToken) {
+	public ArrayList<EventObj> getEvents(@PathVariable String accessToken) {
 		EventRecommendation eventRecommendation = new EventRecommendation(accessToken);
 		ArrayList<EventObj> events = eventRecommendation.GetEvents();
 		
-		return null;
+		return events;
 	}
 }
